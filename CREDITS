@@ -1,0 +1,27 @@
+This is at least a partial credits-file of people that have
+	contributed to the QPT project.  It is sorted by name and
+	formatted to allow easy grepping and beautification by
+	scripts.  The fields are: name (N), email (E), web-address
+	(W), PGP key ID and fingerprint (P), description (D), and
+	snail-mail address (S).
+	Thanks,
+
+			Daniel
+----------
+
+N: Daniel Arango Sohm
+E: jero98772@protonmail.com
+E: jero98772@gmail.com
+D: Original Inventor
+W: https://main.jero98772.page/
+S: Colombia
+
+N: Karina Villegas Uribe
+E: karivuribe@gmail.com
+D: Legal Asistent
+S: Colombia
+
+N: Jerónimo Hoyos Botero
+E: jerohoyos1@gmail.com
+D: LLM specialist
+S: Colombia
