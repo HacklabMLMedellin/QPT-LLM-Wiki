@@ -1,14 +1,529 @@
-QPT-LLM Research License
-Copyright (c) 2026 QPT
+================================================================================
+                        QPT LICENSE -- VERSION 1.0
+           Quantum photonic thermodinamic (QPT) -- Effective Date: 2026
+================================================================================
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including the rights to use, copy, modify, merge, publish, distribute, and build upon the Software, subject to the following conditions:
+SPDX-License-Identifier: QPT-1.0
+Copyright (C) 2026 Quantum Photonic Thermodinamic Large Language Model Reasearcg (QPT). All rights reserved.
 
-1. Open Sharing and Attribution
-Any modifications, improvements, or derivative works built upon the Software must be shared openly and publicly. Proper attribution to QPT and the original copyright notice must be included in all copies or substantial portions of the Software and any derivative works.
+This License governs the QPT software project, including source code,
+model architecture, documented training procedures, inference infrastructure,
+configuration files, and all associated documentation (collectively,
+"the Software"). QPT-LLM is developed and maintained by QPT.
 
-2. Commercial Use and Revenue Thresholds
-Commercial use of the Software is permitted. However, if the user or its affiliates utilize the Software for commercial purposes and generate total revenue exceeding 5 million US dollars (or the equivalent in other currencies) over any consecutive 12-month period, the user must formally implement and comply with QPT protocols for tax reduction with R&D prior to continuing commercial operations.
+This is NOT an OSI-certified open source license. It is a source-available
+license modeled on the openness philosophy of the Linux kernel: maximally
+permissive for individuals, researchers, and non-commercial use, while
+ensuring that large commercial beneficiaries contribute meaningfully to the
+project's sustainability.
 
-3. Warranty and Support
-(a) Except as provided below, the Software and any output are provided on an "AS IS" basis, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the copyright holders be liable for any claim, damages, or other liability.
-(b) Technical support and formal warranties are only provided to commercial users who have successfully met and maintained the QPT tax reduction with R&D compliance requirements set forth in Section 2. Users operating below this threshold receive the Software strictly without support or warranty.
+
+================================================================================
+S1. DEFINITIONS
+================================================================================
+
+"Software"
+    The QPT source code, model architecture, documented training
+    procedures, inference code, configuration files, and all associated
+    documentation made available under this License.
+
+"Model"
+    Any artificial intelligence or machine learning model trained using the
+    Software, in whole or in part, including fine-tuned, distilled, or
+    derived variants.
+
+"Training Phase"
+    The computational process by which a Model is produced, including data
+    preprocessing, gradient updates, and evaluation during training.
+
+"Inference Phase"
+    The process by which a trained Model generates outputs in response to
+    inputs, whether deployed locally, on-premises, or via a network service.
+
+"Dataset"
+    Any collection of data used as input to the Training Phase. Datasets used
+    with or produced alongside the Software are governed by S6 of this License.
+
+"Derivative Work"
+    Any work that is based on or incorporates the Software, including
+    modifications, adaptations, translations, or extensions.
+
+"Commercial Use"
+    Any use of the Software, a Model trained using the Software, or a
+    Derivative Work, in a product or service for which a fee is charged, or
+    that contributes to revenue generation, including indirect monetization
+    through advertising, subscriptions, or data collection. Commercial Use
+    also includes using the Software to train a Model that is subsequently
+    used commercially, even if the Software itself is not distributed.
+
+"Large Commercial User"
+    Any legal entity whose Annual Gross Revenue attributable to a product or
+    service that incorporates or relies upon the Software, a Model trained
+    using the Software, or a Derivative Work, exceeds USD $5,000,000 --
+    adjusted for inflation as measured by the Consumer Price Index (CPI) of
+    the jurisdiction where the entity is incorporated or primarily operates,
+    with 2026 as the base year. If no local equivalent index exists, the U.S.
+    Bureau of Labor Statistics CPI-U shall apply.
+
+"R&D Tax Reduction"
+    A formal fiscal benefit under applicable national law by which a legal
+    entity reduces its tax liability by reason of qualifying research and
+    development expenditure made to or on behalf of QPT. To satisfy the
+    obligations in S5, the expenditure must: (a) be directed to activities
+    that directly benefit the QPT-LLM project; (b) be documented in writing;
+    and (c) be verifiable by QPT upon request.
+
+"Hybrid Algorithm"
+    Any algorithm developed as part of the QPT-LLM project that combines
+    techniques from two or more distinct fields (e.g., quantum computing and
+    machine learning,photonic computing and machine learning , thermodinamic computing and
+    machine learning) and constitutes a novel, non-obvious technical
+    contribution.
+
+"QPT"
+    Quantum Photonic Thermodinamic Large Language Model, the originating organization and licensor
+    of the Software.
+
+	For the purposes of this License, “QPT” refers to the research group, project, or organization responsible for the development, maintenance, and stewardship of the QPT-LLM and QPT-B3-LLM  Software and its associated research. At the time of publication of this License, QPT is directed and administered by Victor Daniel Arango Sohm, who acts as the person responsible for the project and as the holder of the rights associated with QPT-LLM, unless expressly stated otherwise.
+
+	At the time of publication of this License, QPT operates as a research group or project and is not necessarily constituted as a separate legal entity. If QPT subsequently becomes incorporated as a company, foundation, nonprofit organization, or other legal entity, the rights and responsibilities associated with QPT under this License may be transferred to or exercised by such successor entity, as formally determined by Victor Daniel Arango Sohm or the applicable copyright holder.
+
+	The term “QPT”, by itself, does not constitute a representation that a company, foundation, nonprofit organization, or other legal entity currently exists under that name.
+
+"QPT-LLM"
+    Quantum Photonic Thermodinamic Large Language Model, the original product of QPT and the center of the reaserch.
+
+"Contribution"
+
+    Any source code, documentation, data, money, or other material submitted to QPT
+    for inclusion in the Software or Hardware.
+
+"Significant Contribution"
+
+A contribution is deemed significant when an individual, institution, corporation, university, or other entity provides at least ten percent (10%) of the total measurable effort required to design, develop, implement, validate, or substantially advance a protected intellectual creation, software, algorithm, invention, or research output to date.To determine and quantify an entity's exact contribution value, stakeholders must apply the calculation methodology specified in the project's Scoring_Framework_Roadmap.md documentation.  
+
+================================================================================
+S2. GRANT OF LICENSE
+================================================================================
+
+Subject to the terms and conditions of this License, QPT hereby grants you a
+worldwide, royalty-free, non-exclusive, non-sublicensable (except as permitted
+in S4) license to:
+
+  (a) use, copy, and run the Software for personal, academic, research, and
+      non-commercial purposes;
+
+  (b) study the Software, including its source code, training procedures, and
+      inference infrastructure;
+
+  (c) modify the Software and create Derivative Works;
+
+  (d) distribute verbatim or modified copies of the Software, provided the
+      conditions of S4 are met;
+
+  (e) train Models using the Software for non-commercial purposes;
+
+  (f) deploy Models in the Inference Phase for non-commercial purposes.
+
+This License does not grant any right to use QPT trademarks, service marks, or
+trade names, except as provided in S8.
+
+
+================================================================================
+S3. CONDITIONS OF USE
+================================================================================
+
+3.1  Attribution
+
+     Any distribution of the Software or Derivative Works, whether in source
+     or binary form, must retain:
+
+       (i)   the original copyright notice:
+                 "Copyright (C) 2026 QPT";
+       (ii)  this License in its entirety, or a prominent notice directing
+               recipients to the full text of the License;
+       (iii) a clear indication of any modifications made to the Software
+               relative to the original version.
+
+     Removal or obscuring of the copyright notice is a violation subject to
+     the consequences in S11.
+
+3.2  Share-Alike for Modifications
+
+     If you distribute a Derivative Work, you must:
+
+       (i)   make the source code of your modifications publicly available
+               under this License or a compatible license approved in writing
+               by QPT;
+       (ii)  provide a written Modification Disclosure -- a summary describing
+               the nature and scope of the modifications, NOT required to reveal
+               proprietary algorithms, trade secrets, or other intellectual
+               property not itself derived from the Software;
+       (iii) submit the Modification Disclosure to QPT by opening a public
+               issue or pull request in the official QPT-LLM repository, or
+               by sending it to the designated QPT contact address.
+
+     Modification Disclosure does NOT require disclosure of:
+       (a) proprietary data pipelines used for training;
+       (b) internal tooling not derived from the Software; or
+       (c) business-confidential information unrelated to the Software.
+
+3.3  Open Deployment of Trained Models
+
+     If you train a Model using the Software and deploy it publicly --
+     including via an API, web service, or downloadable release -- you must:
+
+       (i)   make the Model weights publicly available, or provide a
+               documented mechanism for others to reproduce training under
+               comparable conditions;
+       (ii)  include attribution to QPT in any public-facing model card,
+               paper, or documentation associated with the Model;
+       (iii) comply with the dataset licensing requirements in S6.
+
+     You are NOT required to open-source the Model if it is used solely for
+     internal, non-commercial purposes.
+
+
+================================================================================
+S4. DISTRIBUTION AND SUBLICENSING
+================================================================================
+
+You may distribute the Software or Derivative Works, provided that:
+
+  (a) each copy or substantial portion is accompanied by this License;
+  (b) the copyright notice in S3.1 is preserved;
+  (c) no additional restrictions are imposed on recipients beyond those in
+      this License;
+  (d) any sublicense granted to a third party is on terms no less restrictive
+      than this License.
+
+You may not sublicense the Software in a manner that would allow a third party
+to use it without attribution obligations or share-alike requirements.
+
+
+================================================================================
+S5. COMMERCIAL USE
+================================================================================
+
+5.1  Permitted Commercial Use
+
+     Commercial Use of the Software is permitted subject to this section.
+     Any entity engaging in Commercial Use must:
+
+       (a) comply with all attribution and share-alike conditions in S3;
+       (b) not misrepresent the origin or nature of the Software;
+       (c) include a disclosure in product documentation or terms of service
+           stating that the product incorporates QPT.
+
+5.2  Large Commercial User Obligation
+
+     A Large Commercial User must, on an annual basis, satisfy at least one
+     of the following obligations:
+
+       (a) make a direct monetary donation to QPT; or
+       (b) apply an R&D Tax Reduction under applicable national law, structured
+           so that the economic benefit flows to or is credited to QPT.
+
+     The economic value of the donation or R&D Tax Reduction must be
+     proportional to the revenue generated from the product or service that
+     incorporates the Software. QPT will publish a contribution schedule
+     specifying suggested amounts based on revenue tiers.
+
+     This obligation applies equally to Commercial Use in the Training Phase
+     (i.e., using the Software to train a Model that is subsequently used
+     commercially, even if the Software itself is not redistributed).
+
+     The USD $5,000,000 threshold and all monetary amounts in this License
+     are denominated in United States Dollars as of 2026 and adjusted
+     annually using the applicable CPI as described in S1.
+
+
+================================================================================
+S6. DATASETS
+================================================================================
+
+Datasets used in the Training Phase of a Model are NOT covered by this
+License. Each dataset must be governed by its own license, appropriate to its
+content and provenance.
+
+If you create a new dataset in connection with the Software or a Model trained
+using the Software, and you distribute or publish that dataset, you must:
+
+  (a) publish the dataset under a separate, clearly specified license
+      (e.g., CC BY 4.0, CC BY-SA 4.0, or an equivalent open data license);
+  (b) include a dataset card or equivalent documentation describing the
+      dataset's contents, provenance, collection methodology, and any known
+      limitations or biases;
+  (c) not impose on the dataset license any terms that conflict with this
+      License or that would prevent recipients from using the dataset with
+      the Software.
+
+QPT makes no representations regarding the licensing of datasets used
+internally. Third-party datasets referenced in QPT documentation are subject
+to their respective licenses.
+
+
+================================================================================
+S7. DEPENDENCIES
+================================================================================
+
+The Software may depend on third-party libraries, frameworks, or tools
+("Dependencies"). Dependencies are NOT covered by this License.
+
+When distributing the Software or a Derivative Work, you must:
+
+  (a) clearly identify all material Dependencies;
+  (b) ensure that the license of each Dependency is compatible with your
+      intended use and distribution;
+  (c) not represent that any Dependency is licensed under this License
+      unless it is.
+
+QPT maintains a list of Dependencies and their respective licenses in the
+repository at DEPENDENCIES.md. You are responsible for independently verifying
+the license terms of any Dependency you introduce in a Derivative Work.
+
+
+================================================================================
+S8. TRADEMARKS
+================================================================================
+
+The names "QPT," "QPT-B3", "QPT-LLM" and "QPT-B3-LLM," as well as
+any associated logos, icons, or trade dress (collectively, "QPT Marks"), are
+trademarks or service marks of QPT.
+
+This License does NOT grant any right to use QPT Marks. Use is governed by
+the QPT Trademark Policy, published separately and modeled on the Python
+Software Foundation Trademark Policy:
+
+  (a) You MAY use "QPT-LLM" in a factual, non-misleading statement to
+      identify the software you are using (e.g., "This product uses QPT-LLM").
+
+  (b) You MAY NOT use QPT Marks as part of the name of a product, service,
+      domain, or organization without prior written approval from QPT.
+
+  (c) You MAY NOT use QPT Marks in a way that implies endorsement,
+      sponsorship, or affiliation with QPT without written authorization.
+
+  (d) Derivative Works may not use QPT Marks or confusingly similar names.
+
+QPT reserves the right to update the Trademark Policy. The current version
+will always be available at the official QPT-LLM repository.
+
+
+================================================================================
+S9. PATENTS
+================================================================================
+
+9.1  Patent Grant
+
+     Subject to the conditions of this License, QPT grants you a
+     non-exclusive, worldwide, royalty-free patent license under QPT's patent
+     claims necessarily infringed by the Software as distributed by QPT, to
+     make, use, sell, offer for sale, import, and otherwise transfer the
+     Software.
+
+9.2  Hybrid Algorithm Patents
+
+     Any Hybrid Algorithm developed as part of the QPT-LLM project shall be
+     owned exclusively by QPT, which shall have the exclusive right to file,
+     prosecute, and maintain patent applications for such algorithms.
+
+     Contributors who develop Hybrid Algorithms in the course of contributing
+     to the Software agree to assign all right, title, and interest in such
+     algorithms to QPT, and to execute any documents reasonably requested by
+     QPT to perfect such assignment.
+
+9.3  Patent Retaliation
+
+     If you initiate patent litigation against QPT or any contributor
+     alleging that the Software infringes a patent, your license under this
+     License terminates automatically as of the date such litigation is filed.
+
+
+================================================================================
+S10. COMMERCIAL VIOLATION DAMAGES
+================================================================================
+
+Any material violation of the commercial use obligations in S5 shall be
+subject to the following:
+
+  (a) QPT may seek compensatory damages equal to the economic benefit obtained
+      by the violating party through the unauthorized commercial use.
+
+  (b) QPT may additionally seek damages equal to three (3) times the economic
+      benefit obtained through the violation.
+
+  (c) QPT may seek injunctive relief to prevent continued unauthorized use.
+
+Nothing in this section limits QPT's right to seek other remedies available
+under applicable law.
+
+
+================================================================================
+S11. TERMINATION
+================================================================================
+
+11.1  Grounds for Termination
+
+      Your rights under this License terminate automatically if:
+
+        (a) you fail to cure a violation subject to a cure period (see S11.3)
+            within the applicable time limit;
+        (b) you commit a violation for which no cure period is provided;
+        (c) you initiate patent litigation against QPT or any contributor
+            as described in S9.3;
+        (d) you make a material misrepresentation regarding attribution,
+            Modification Disclosure, or commercial use status.
+
+11.2  Effect of Termination
+
+      Upon termination of this License:
+
+        (a) all rights granted to you under this License cease immediately;
+        (b) you must cease all use, distribution, and sublicensing of the
+            Software and any Derivative Works;
+        (c) you must destroy or return to QPT all copies of the Software in
+            your possession or control, to the extent technically practicable;
+        (d) sublicenses previously granted by you to third parties in
+            compliance with this License survive termination, provided those
+            third parties independently comply with this License;
+        (e) obligations that by their nature should survive termination
+            (including S10, S12, S13, S14, and S15) shall survive.
+
+      A party whose license has been terminated may not obtain a new license
+      from QPT -- whether directly or through an affiliate -- without prior
+      written authorization from QPT. QPT may impose conditions on
+      reinstatement, including payment of damages or other remedial measures.
+
+11.3  Cure Periods and Violation Consequences
+
+      Violation                          Consequence
+      --------------------------------   ------------------------------------------------
+      Minor attribution error            30 days to correct; license continues if cured.
+      Failure to share modifications     Immediate termination.
+      Unauthorized commercial use        Immediate termination + damages + penalty (S10).
+      Removal of copyright notice        15 days to correct; license continues if cured.
+      Deliberate fraud                   Immediate termination + possible damages.
+
+
+================================================================================
+S12. WARRANTY DISCLAIMER AND TECHNICAL SUPPORT
+================================================================================
+
+12.1  No Warranty
+
+      THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND,
+      EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+      MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+      NON-INFRINGEMENT. QPT DOES NOT GUARANTEE THAT THE SOFTWARE IS FREE
+      OF ERRORS, DEFECTS, SECURITY VULNERABILITIES, OR INTERRUPTIONS.
+
+12.2  Technical Support
+
+      "Support" and "warranty" are distinct concepts. This License provides
+      no warranty of any kind. Support is a discretionary, goodwill service.
+
+      QPT may, at its discretion, provide technical assistance through the
+      official GitHub Issues tracker for the QPT-LLM repository. QPT makes
+      no commitment to respond within any particular time frame and is under
+      no obligation to resolve any particular issue.
+
+      QPT may provide prioritized technical assistance to a person or
+      institution that, during the current calendar year, has:
+
+        (a) made a direct monetary donation to QPT with an economic value
+            greater than USD $5,000, adjusted for inflation as in S1; or
+        (b) applied an R&D Tax Reduction that directly benefits QPT with an
+            economic value greater than USD $5,000, similarly adjusted.
+
+      Prioritized assistance is not a warranty and creates no contractual
+      obligation or guarantee of outcome.
+
+
+================================================================================
+S13. LIMITATION OF LIABILITY
+================================================================================
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL QPT,
+ITS CONTRIBUTORS, OFFICERS, DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE FOR:
+
+  (a) ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES;
+  (b) LOSS OF PROFITS, REVENUE, DATA, BUSINESS, OR GOODWILL;
+  (c) COST OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  (d) INTERRUPTION OF BUSINESS OR LOSS OF BUSINESS OPPORTUNITY;
+
+ARISING OUT OF OR IN CONNECTION WITH THE SOFTWARE, THIS LICENSE, OR THE USE
+OR INABILITY TO USE THE SOFTWARE, EVEN IF QPT HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES, AND REGARDLESS OF THE THEORY OF LIABILITY
+(CONTRACT, TORT, STRICT LIABILITY, OR OTHERWISE).
+
+Some jurisdictions do not allow the exclusion or limitation of incidental or
+consequential damages. In such jurisdictions, QPT's liability is limited to
+the maximum extent permitted by law.
+
+
+================================================================================
+S14. GOVERNING LAW AND JURISDICTION
+================================================================================
+
+This License shall initially be governed by and construed in accordance with
+the laws of the Republic of Colombia, without regard to its conflict of law
+provisions. The parties agree to submit to the exclusive jurisdiction of the
+courts located in Bogota, Colombia, for the resolution of any dispute arising
+out of or in connection with this License.
+
+As QPT establishes a legal presence in other jurisdictions, QPT reserves the
+right to update the governing law and jurisdiction upon thirty (30) days'
+written notice to active licensees. Any update will apply prospectively and
+will not affect rights or disputes that arose prior to the change.
+
+
+================================================================================
+S15. GENERAL PROVISIONS
+================================================================================
+
+15.1  Entire Agreement
+
+      This License, together with the QPT Trademark Policy referenced in S8,
+      constitutes the entire agreement between you and QPT with respect to
+      the Software and supersedes all prior or contemporaneous understandings,
+      agreements, or representations.
+
+15.2  Severability
+
+      If any provision of this License is held to be unenforceable or invalid
+      under applicable law, that provision shall be modified to the minimum
+      extent necessary to make it enforceable. The remaining provisions shall
+      continue in full force and effect.
+
+15.3  No Waiver
+
+      Failure by QPT to enforce any provision of this License shall not
+      constitute a waiver of QPT's right to enforce that provision in the
+      future.
+
+15.4  Versioning and Amendments
+
+      QPT may publish revised versions of this License. Each version will be
+      assigned a new version number. You may use the Software under the terms
+      of the version under which you received it, or under the terms of any
+      later version published by QPT.
+
+15.5  Contributions
+
+      By submitting a Contribution to the QPT-LLM repository, you agree that
+      your Contribution is made under the terms of this License, and you
+      represent that you have the right to grant the license in S2 with
+      respect to your Contribution. For Hybrid Algorithm contributions, the
+      assignment provision in S9.2 additionally applies.
+
+15.6  Contact
+
+      For licensing inquiries, trademark permissions, or to report violations,
+      contact QPT at the address published in the official QPT-LLM repository.
+
+
+================================================================================
+          END OF QPT-LLM LICENSE -- VERSION 1.0
+          Copyright (C) 2026 QPT
+================================================================================

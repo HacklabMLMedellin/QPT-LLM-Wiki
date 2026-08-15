@@ -121,15 +121,45 @@ Train phisical hardware with similar results or better
 
 #### Soft Success
 
-**1 Paper**
+**Pubish each paper**
 
-**2 to 5 Paper about hybrid algorithm**
+**Pubish each Hybrid algorithm**
 
-**Be in a conferences**
+**Pubish each Patent**
 
-**Be in internacional conferences a conferences**
+**Each speaker in a conferences**
+
+**Be Speaker in internacional a conferences**
+
+**Get money grant for startup**
+
+**Get money with Research grant**
+
+**Get a company for tax reduction in R&D that give money to QPT**
 
 **Buy photonic computer**
 
 **Buy thermpodinamic computer**
+
+**Buy Quantum computer**
+
+**Get a phisical ofice**
+
+**Host the website**
+
+**Get  a domain name**
+
+**Make a website Frontend**
+
+**Get mearchadizing**
+
+**Get QPT-Foundation as foundation for research (all burocracy done)**
+
+**Get QPT as compnay for research (all burocracy done)**
+
+**Get a team of 3 people working 8 hours per week with salary**
+
+**Get a team of 10 people working 8 hours per week with salary**
+
+**Get a team of 25 people working 8 hours per week with salary**
 
