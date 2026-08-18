@@ -5,3 +5,55 @@ For the purposes of this License, “QPT” refers to the research group, projec
 At the time of publication of this License, QPT operates as a research group or project and is not necessarily constituted as a separate legal entity. If QPT subsequently becomes incorporated as a company, foundation, nonprofit organization, or other legal entity, the rights and responsibilities associated with QPT under this License may be transferred to or exercised by such successor entity, as formally determined by Victor Daniel Arango Sohm or the applicable copyright holder.
 
 The term “QPT”, by itself, does not constitute a representation that a company, foundation, nonprofit organization, or other legal entity currently exists under that name.
+
+Definition of Significant Contribution
+
+A contribution is deemed significant when an individual, institution, corporation, university, or other entity provides at least ten percent (10%) of the total measurable effort required to design, develop, implement, validate, or substantially advance a protected intellectual creation, software, algorithm, invention, or research output to date.To determine and quantify an entity's exact contribution value, stakeholders must apply the calculation methodology specified in the project's Scoring_Framework_Roadmap.md documentation.  
+
+
+Define el software o el código o lo que sea
+
+es un modelo de lenguaje(en inferencia y entrenamiento) con capas modulares entre diferentes paradigmas de computacion (cuantica,fotonica,termica)
+
+Como quiero que usen QPT
+
+Quiero que se use para optimizar desarrollo de modelos de lenguajes en arquitecturas de computadores hibridos , para inferencia y entrenamiento
+Quiero que se use de forma barata y que usen mejor este sistema antes de que alguien mas genere su propio QPT
+
+no hay problemas si hacen cosas peligrosas como armas biologicas,nucleares cosas sexuales, no me importa y no soy responsable
+
+Como no quiero que usen QPT
+
+que creen modeles hibridos o ejecuten sin qpt, por eso qpt debe ser barato
+de forma descarada haciendo millones de dolares en ganacnias, sin contar con la arquitectura , existe el caso que ellos usen y implementen sus propias capas
+
+y sin atribucion al creador, puede ser minima la atribucion pero debe tner
+caracterizalo, qué lo hace diferente a otros? 
+
+
+En qué plataforma está? 
+
+corre en python
+
+dependiendo de la situacion usamos estas tecnologia
+
+jax, pytorch
+PennyLane,o computador cuantico
+THRML o computador termico
+PhotonicTorch o computador fotonico
+
+para el backend
+fastapi
+postgress db
+
+y mas
+
+
+para el frontend
+react y threejs
+
+Cómo se creó?
+
+Con un computador y unas manos, despues de pensar mucho y aprender de todo, y prototipando
+
+

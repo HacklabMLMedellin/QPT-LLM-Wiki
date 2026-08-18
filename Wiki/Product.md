@@ -163,3 +163,6 @@ Train phisical hardware with similar results or better
 
 **Get a team of 25 people working 8 hours per week with salary**
 
+**Be constitude in USA**
+
+**Get a Licence**
